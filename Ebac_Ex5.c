@@ -128,8 +128,8 @@ int main() // Função inicial para apresentar o menu
 	printf("   Escolha a opção desejada do menu:\n\n");
 	printf("\t1 - Registrar usuários\n");
 	printf("\t2 - Consultar usuários\n");
-	printf("\t3 - Deletar usuários\n\n"); 
-	printf("   Digite 1,2 ou 3 e tecle enter\n"); // Acrescentei a instrução para facilitar a compreensão do usuário
+	printf("\t3 - Deletar usuários\n"); 
+	printf("\t4 - Sair do sistema\n\n"); // Acrescentei a instrução para facilitar a compreensão do usuário
 	//Fim do Menu
 	
 	scanf("%d", &opcao); // Armazenando a escolha do usuário
@@ -148,6 +148,11 @@ int main() // Função inicial para apresentar o menu
 	 	
 	 	case 3:
 	 	deletar();
+	 	break; 
+	 	
+	 	case 4:
+	 	printf("\nObrigada por utilizar o nosso sistema!\n");
+	 	return 0;
 	 	break; 
 	 	
 	 	default:
